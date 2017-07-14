@@ -4,3 +4,22 @@ aligning input volume to GCA.
 dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
 l_intensity = 1.0000
 aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-05, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+dt=5.00e-06, momentum=0.80, tol=1.00e-07, niteratons=25
+l_intensity = 1.0000
+aligning input volume to GCA.
+011: rms = 3.842
+012: rms = 3.842
+013: rms = 3.839
+014: rms = 3.839
+015: rms = 3.838
+016: rms = 3.836
+017: rms = 3.836
+018: rms = 3.788
+019: rms = 3.788
+020: rms = 3.787
+021: rms = 3.787
+022: rms = 3.787
+023: rms = 3.787
