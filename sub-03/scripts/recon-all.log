@@ -42864,3 +42864,211 @@ AvgCurvTif folding.atlas.acfb40.noaparc.i12.2016-08-02.tif
 GCSDIR /Applications/freesurfer/average
 GCS DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs
 #######################################
+--------------------
+  mrisRemoveNegativeArea()
+pass 1: epoch 1 of 3 starting distance error %19.52
+pass 1: epoch 2 of 3 starting distance error %19.47
+unfolding complete - removing small folds...
+starting distance error %19.37
+removing remaining folds...
+final distance error %19.39
+MRISunfold() return, current seed 1234
+-01: dt=0.0000, 81 negative triangles
+216: dt=0.9900, 81 negative triangles
+217: dt=0.9900, 41 negative triangles
+218: dt=0.9900, 36 negative triangles
+219: dt=0.9900, 36 negative triangles
+220: dt=0.9900, 25 negative triangles
+221: dt=0.9900, 29 negative triangles
+222: dt=0.9900, 28 negative triangles
+223: dt=0.9900, 23 negative triangles
+224: dt=0.9900, 31 negative triangles
+225: dt=0.9900, 23 negative triangles
+226: dt=0.9900, 22 negative triangles
+227: dt=0.9900, 22 negative triangles
+228: dt=0.9900, 24 negative triangles
+229: dt=0.9900, 24 negative triangles
+230: dt=0.9900, 22 negative triangles
+231: dt=0.9900, 18 negative triangles
+232: dt=0.9900, 19 negative triangles
+233: dt=0.9900, 18 negative triangles
+234: dt=0.9900, 19 negative triangles
+235: dt=0.9900, 18 negative triangles
+236: dt=0.9900, 21 negative triangles
+237: dt=0.9900, 20 negative triangles
+238: dt=0.9900, 20 negative triangles
+239: dt=0.9900, 19 negative triangles
+240: dt=0.9900, 24 negative triangles
+241: dt=0.9405, 19 negative triangles
+242: dt=0.9405, 17 negative triangles
+243: dt=0.9405, 17 negative triangles
+244: dt=0.9405, 16 negative triangles
+245: dt=0.9405, 19 negative triangles
+246: dt=0.9405, 15 negative triangles
+247: dt=0.9405, 16 negative triangles
+248: dt=0.9405, 16 negative triangles
+249: dt=0.9405, 16 negative triangles
+250: dt=0.9405, 16 negative triangles
+251: dt=0.9405, 18 negative triangles
+252: dt=0.9405, 16 negative triangles
+253: dt=0.9405, 17 negative triangles
+254: dt=0.9405, 17 negative triangles
+255: dt=0.9405, 16 negative triangles
+256: dt=0.9405, 12 negative triangles
+257: dt=0.9405, 11 negative triangles
+258: dt=0.9405, 12 negative triangles
+259: dt=0.9405, 10 negative triangles
+260: dt=0.9405, 9 negative triangles
+261: dt=0.9405, 8 negative triangles
+262: dt=0.9405, 10 negative triangles
+263: dt=0.9405, 8 negative triangles
+264: dt=0.9405, 8 negative triangles
+265: dt=0.9405, 8 negative triangles
+266: dt=0.9405, 6 negative triangles
+267: dt=0.9405, 7 negative triangles
+268: dt=0.9405, 4 negative triangles
+269: dt=0.9405, 6 negative triangles
+270: dt=0.9405, 6 negative triangles
+271: dt=0.9405, 4 negative triangles
+272: dt=0.9405, 6 negative triangles
+273: dt=0.9405, 4 negative triangles
+274: dt=0.9405, 3 negative triangles
+275: dt=0.9405, 4 negative triangles
+276: dt=0.9405, 3 negative triangles
+277: dt=0.9405, 2 negative triangles
+278: dt=0.9405, 2 negative triangles
+279: dt=0.9405, 2 negative triangles
+280: dt=0.9405, 2 negative triangles
+281: dt=0.9405, 2 negative triangles
+282: dt=0.9405, 2 negative triangles
+283: dt=0.9405, 2 negative triangles
+284: dt=0.9405, 2 negative triangles
+285: dt=0.9405, 2 negative triangles
+286: dt=0.9405, 2 negative triangles
+287: dt=0.8935, 2 negative triangles
+288: dt=0.8935, 2 negative triangles
+289: dt=0.8935, 2 negative triangles
+290: dt=0.8935, 2 negative triangles
+291: dt=0.8935, 2 negative triangles
+292: dt=0.8935, 2 negative triangles
+293: dt=0.8935, 2 negative triangles
+294: dt=0.8935, 2 negative triangles
+295: dt=0.8935, 2 negative triangles
+296: dt=0.8935, 2 negative triangles
+297: dt=0.8488, 2 negative triangles
+298: dt=0.8488, 2 negative triangles
+299: dt=0.8488, 2 negative triangles
+300: dt=0.8488, 2 negative triangles
+301: dt=0.8488, 2 negative triangles
+302: dt=0.8488, 2 negative triangles
+303: dt=0.8488, 2 negative triangles
+expanding nbhd size to 1
+304: dt=0.9900, 2 negative triangles
+\n\n
+New invocation of recon-all 
+\n\n
+Tue Jul 18 15:19:23 EDT 2017
+/Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03
+/Applications/freesurfer/bin/recon-all
+-s sub-03 -qcache
+subjid sub-03
+setenv SUBJECTS_DIR /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data
+FREESURFER_HOME /Applications/freesurfer
+Actual FREESURFER_HOME /Applications/freesurfer
+build-stamp.txt: freesurfer-Darwin-OSX-stable-pub-v6.0.0-2beb96c
+Darwin CFMI-iMac-10.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+cputime      unlimited
+filesize     unlimited
+datasize     unlimited
+stacksize    8192 kbytes
+coredumpsize 0 kbytes
+memoryuse    unlimited
+descriptors  7168 
+memorylocked unlimited
+maxproc      709 
+
+PhysMem: 7518M used (1947M wired), 671M unused.
+
+########################################
+program versions used
+$Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
+$Id: mri_motion_correct.fsl,v 1.15 2016/02/16 17:17:20 zkaufman Exp $
+mri_convert.bin -all-info 
+ProgramName: mri_convert.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:23-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_convert.c,v 1.226 2016/02/26 16:15:24 mreuter Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+FLIRT version 5.5
+$Id: talairach_avi,v 1.13 2015/12/23 04:25:17 greve Exp $
+mri_convert.bin --version 
+stable6
+ProgramName: tkregister2_cmdl  ProgramArguments: --all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:23-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: tkregister2.c,v 1.132.2.1 2016/08/02 21:17:29 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+Program nu_correct, built from:
+Package MNI N3, version 1.12.0, compiled by nicks@gust.nmr.mgh.harvard.edu (x86_64-apple-darwin11.4.2) on 2015-06-19 at 15:37:08
+305: dt=0.9900, 2 negative triangles
+ProgramName: mri_make_uchar  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:24-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_make_uchar.c,v 1.4 2011/03/02 00:04:14 nicks Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:24-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_normalize.c,v 1.88.2.3 2016/12/27 16:47:13 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_watershed  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:24-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_watershed.cpp,v 1.103 2016/06/17 18:00:49 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_gcut  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:24-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_gcut.cpp,v 1.14 2011/03/02 00:04:16 nicks Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segment  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:24-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_segment.c,v 1.43.2.1 2016/10/27 22:24:52 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_label2label.bin  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:25-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_label2label.c,v 1.48.2.2 2016/12/12 14:15:26 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_em_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:25-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_em_register.c,v 1.105.2.1 2016/10/27 22:25:10 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_normalize  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:25-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_ca_normalize.c,v 1.67.2.2 2016/10/27 22:25:09 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_register  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:25-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_ca_register.c,v 1.96.2.3 2016/10/27 22:25:10 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:25-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_ca_label.c,v 1.113.2.2 2016/10/27 22:25:10 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+306: dt=0.9900, 2 negative triangles
+ProgramName: mri_pretess  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:25-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_pretess.c,v 1.22 2013/08/30 18:12:25 mreuter Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fill  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:26-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_fill.c,v 1.119 2011/10/25 14:09:58 fischl Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_tessellate  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:26-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_tessellate.c,v 1.38.2.1 2016/07/26 18:46:38 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_concatenate_lta.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:26-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_concatenate_lta.c,v 1.16 2015/11/21 00:06:20 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_normalize_tp2  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:26-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_normalize_tp2.c,v 1.8 2011/03/02 00:04:23 nicks Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_smooth  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:26-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_smooth.c,v 1.30 2014/01/21 18:48:21 fischl Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_inflate  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:26-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_inflate.c,v 1.45 2016/01/20 23:42:15 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:27-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_curvature.c,v 1.31 2011/03/02 00:04:30 nicks Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_sphere  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:27-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_sphere.c,v 1.61 2016/01/20 23:42:15 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_fix_topology  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:27-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_fix_topology.c,v 1.50.2.1 2016/10/27 22:25:58 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+307: dt=0.9405, 2 negative triangles
+ProgramName: mris_topo_fixer  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:27-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_topo_fixer.cpp,v 1.29 2011/03/02 00:04:34 nicks Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_ca_label  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:27-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_ca_label.c,v 1.37 2014/02/04 17:46:42 fischl Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_euler_number  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:27-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_euler_number.c,v 1.10 2013/01/14 22:39:14 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_make_surfaces  ProgramArguments: -all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:27-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_make_surfaces.c,v 1.164.2.4 2016/12/13 22:26:32 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_register  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:27-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_register.c,v 1.63 2016/01/20 23:43:04 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_volmask  ProgramArguments: --all-info  ProgramVersion: $Name:  $  TimeStamp: 2017/07/18-19:19:28-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_volmask.cpp,v 1.26.2.2 2016/11/18 20:05:18 zkaufman Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_anatomical_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:28-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_anatomical_stats.c,v 1.79 2016/03/14 15:15:34 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mrisp_paint  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:28-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mrisp_paint.c,v 1.12 2016/03/22 14:47:57 fischl Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_curvature_stats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:28-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_curvature_stats.c,v 1.65 2015/06/04 20:50:51 nicks Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mris_calc  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:28-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mris_calc.c,v 1.54.2.1 2016/09/27 18:51:28 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+308: dt=0.9405, 2 negative triangles
+$Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $
+
+ProgramName: mri_robust_register.bin  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:28-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_robust_register.cpp,v 1.77 2016/01/20 23:36:17 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+$Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $
+
+ProgramName: mri_robust_template  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:29-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_robust_template.cpp,v 1.54 2016/05/05 21:17:08 mreuter Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_and  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:29-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_and.c,v 1.4 2011/03/02 00:04:13 nicks Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_or  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:29-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_or.c,v 1.5 2013/03/20 15:03:29 lzollei Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_fuse_segmentations  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:29-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_fuse_segmentations.c,v 1.8 2011/03/02 00:04:15 nicks Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_segstats  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:29-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_segstats.c,v 1.121 2016/05/31 17:27:11 greve Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+ProgramName: mri_relabel_hypointensities  ProgramArguments: -all-info  ProgramVersion: $Name: stable6 $  TimeStamp: 2017/07/18-19:19:29-GMT  BuildTimeStamp: Jan 19 2017 22:24:12  CVS: $Id: mri_relabel_hypointensities.c,v 1.13 2015/05/15 18:44:10 nicks Exp $  User: freesurfer_user  Machine: CFMI-iMac-10.local  Platform: Darwin  PlatformVersion: 16.6.0  CompilerName: GCC  CompilerVersion: 40400 
+#######################################
+GCADIR /Applications/freesurfer/average
+GCA RB_all_2016-05-10.vc700.gca
+GCASkull RB_all_withskull_2016-05-10.vc700.gca
+AvgCurvTif folding.atlas.acfb40.noaparc.i12.2016-08-02.tif
+GCSDIR /Applications/freesurfer/average
+GCS DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs
+#######################################
+309: dt=0.9405, 2 negative triangles
+310: dt=0.9405, 2 negative triangles
+311: dt=0.9405, 2 negative triangles
+312: dt=0.9405, 2 negative triangles
+313: dt=0.9405, 2 negative triangles
+314: dt=0.9405, 2 negative triangles
+315: dt=0.9405, 2 negative triangles
+316: dt=0.9405, 2 negative triangles
+317: dt=0.8935, 2 negative triangles
+318: dt=0.8935, 2 negative triangles
+319: dt=0.8935, 2 negative triangles
+320: dt=0.8935, 2 negative triangles
+321: dt=0.8935, 2 negative triangles
+322: dt=0.8935, 2 negative triangles
+323: dt=0.8935, 2 negative triangles
+324: dt=0.8935, 2 negative triangles
+325: dt=0.8935, 2 negative triangles

@@ -1687,3 +1687,5 @@ Add the -clean-bm flag to recon-all to overwrite brainmask.mgz.\n
 \n mris_sphere -rusage /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/sub-03/touch/rusage.mris_sphere.lh.dat -seed 1234 ../surf/lh.inflated ../surf/lh.sphere \n
 \n\n#---------------------------------
 # New invocation of recon-all Tue Jul 18 15:04:04 EDT 2017 
+\n\n#---------------------------------
+# New invocation of recon-all Tue Jul 18 15:19:22 EDT 2017 
