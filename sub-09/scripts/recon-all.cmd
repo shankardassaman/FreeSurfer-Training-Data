@@ -883,3 +883,847 @@ Add the -clean-bm flag to recon-all to overwrite brainmask.mgz.\n
 \n mris_label2annot --s sub-09 --hemi rh --ctab /Applications/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.thresh.label --l rh.BA2_exvivo.thresh.label --l rh.BA3a_exvivo.thresh.label --l rh.BA3b_exvivo.thresh.label --l rh.BA4a_exvivo.thresh.label --l rh.BA4p_exvivo.thresh.label --l rh.BA6_exvivo.thresh.label --l rh.BA44_exvivo.thresh.label --l rh.BA45_exvivo.thresh.label --l rh.V1_exvivo.thresh.label --l rh.V2_exvivo.thresh.label --l rh.MT_exvivo.thresh.label --l rh.entorhinal_exvivo.thresh.label --l rh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose \n
 \n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.stats -b -a ./rh.BA_exvivo.annot -c ./BA_exvivo.ctab sub-09 rh white \n
 \n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.thresh.stats -b -a ./rh.BA_exvivo.thresh.annot -c ./BA_exvivo.thresh.ctab sub-09 rh white \n
+\n\n#---------------------------------
+# New invocation of recon-all Tue Jul 18 11:09:20 EDT 2017 
+#--------------------------------------------
+#@# Qdec Cache preproc lh thickness fsaverage Tue Jul 18 11:09:28 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas thickness --target fsaverage --out lh.thickness.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh area fsaverage Tue Jul 18 11:09:34 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas area --target fsaverage --out lh.area.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh area.pial fsaverage Tue Jul 18 11:09:42 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas area.pial --target fsaverage --out lh.area.pial.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh volume fsaverage Tue Jul 18 11:09:50 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas volume --target fsaverage --out lh.volume.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh curv fsaverage Tue Jul 18 11:09:59 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas curv --target fsaverage --out lh.curv.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh sulc fsaverage Tue Jul 18 11:10:05 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas sulc --target fsaverage --out lh.sulc.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh white.K fsaverage Tue Jul 18 11:10:11 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas white.K --target fsaverage --out lh.white.K.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh white.H fsaverage Tue Jul 18 11:10:18 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas white.H --target fsaverage --out lh.white.H.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh jacobian_white fsaverage Tue Jul 18 11:10:24 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas jacobian_white --target fsaverage --out lh.jacobian_white.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh w-g.pct.mgh fsaverage Tue Jul 18 11:10:31 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas w-g.pct.mgh --target fsaverage --out lh.w-g.pct.mgh.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh thickness fsaverage Tue Jul 18 11:10:37 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas thickness --target fsaverage --out rh.thickness.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh area fsaverage Tue Jul 18 11:10:43 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas area --target fsaverage --out rh.area.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh area.pial fsaverage Tue Jul 18 11:10:52 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas area.pial --target fsaverage --out rh.area.pial.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh volume fsaverage Tue Jul 18 11:11:00 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas volume --target fsaverage --out rh.volume.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh curv fsaverage Tue Jul 18 11:11:08 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas curv --target fsaverage --out rh.curv.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh sulc fsaverage Tue Jul 18 11:11:15 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas sulc --target fsaverage --out rh.sulc.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh white.K fsaverage Tue Jul 18 11:11:21 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas white.K --target fsaverage --out rh.white.K.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh white.H fsaverage Tue Jul 18 11:11:27 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas white.H --target fsaverage --out rh.white.H.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh jacobian_white fsaverage Tue Jul 18 11:11:33 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas jacobian_white --target fsaverage --out rh.jacobian_white.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh w-g.pct.mgh fsaverage Tue Jul 18 11:11:39 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas w-g.pct.mgh --target fsaverage --out rh.w-g.pct.mgh.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm0 fsaverage Tue Jul 18 11:11:45 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm5 fsaverage Tue Jul 18 11:11:47 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm10 fsaverage Tue Jul 18 11:11:51 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm15 fsaverage Tue Jul 18 11:11:55 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm20 fsaverage Tue Jul 18 11:11:59 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm25 fsaverage Tue Jul 18 11:12:04 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm0 fsaverage Tue Jul 18 11:12:08 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm5 fsaverage Tue Jul 18 11:12:10 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm10 fsaverage Tue Jul 18 11:12:14 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm15 fsaverage Tue Jul 18 11:12:18 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm20 fsaverage Tue Jul 18 11:12:22 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm25 fsaverage Tue Jul 18 11:12:27 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm0 fsaverage Tue Jul 18 11:12:32 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm5 fsaverage Tue Jul 18 11:12:34 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm10 fsaverage Tue Jul 18 11:12:38 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm15 fsaverage Tue Jul 18 11:12:42 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm20 fsaverage Tue Jul 18 11:12:46 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm25 fsaverage Tue Jul 18 11:12:50 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm0 fsaverage Tue Jul 18 11:12:55 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm5 fsaverage Tue Jul 18 11:12:57 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm10 fsaverage Tue Jul 18 11:13:01 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm15 fsaverage Tue Jul 18 11:13:05 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm20 fsaverage Tue Jul 18 11:13:09 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm25 fsaverage Tue Jul 18 11:13:13 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm0 fsaverage Tue Jul 18 11:13:18 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm5 fsaverage Tue Jul 18 11:13:20 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm10 fsaverage Tue Jul 18 11:13:24 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm15 fsaverage Tue Jul 18 11:13:28 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm20 fsaverage Tue Jul 18 11:13:32 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm25 fsaverage Tue Jul 18 11:13:36 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm0 fsaverage Tue Jul 18 11:13:41 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm5 fsaverage Tue Jul 18 11:13:43 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm10 fsaverage Tue Jul 18 11:13:46 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm15 fsaverage Tue Jul 18 11:13:50 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm20 fsaverage Tue Jul 18 11:13:55 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm25 fsaverage Tue Jul 18 11:13:59 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm0 fsaverage Tue Jul 18 11:14:04 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm5 fsaverage Tue Jul 18 11:14:06 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm10 fsaverage Tue Jul 18 11:14:10 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm15 fsaverage Tue Jul 18 11:14:14 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm20 fsaverage Tue Jul 18 11:14:18 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm25 fsaverage Tue Jul 18 11:14:22 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm0 fsaverage Tue Jul 18 11:14:27 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm5 fsaverage Tue Jul 18 11:14:29 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm10 fsaverage Tue Jul 18 11:14:32 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm15 fsaverage Tue Jul 18 11:14:36 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm20 fsaverage Tue Jul 18 11:14:41 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm25 fsaverage Tue Jul 18 11:14:45 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm0 fsaverage Tue Jul 18 11:14:50 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm5 fsaverage Tue Jul 18 11:14:51 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm10 fsaverage Tue Jul 18 11:14:55 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm15 fsaverage Tue Jul 18 11:14:59 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm20 fsaverage Tue Jul 18 11:15:04 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm25 fsaverage Tue Jul 18 11:15:08 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm0 fsaverage Tue Jul 18 11:15:13 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm5 fsaverage Tue Jul 18 11:15:16 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm10 fsaverage Tue Jul 18 11:15:20 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm15 fsaverage Tue Jul 18 11:15:24 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm20 fsaverage Tue Jul 18 11:15:29 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm25 fsaverage Tue Jul 18 11:15:34 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm0 fsaverage Tue Jul 18 11:15:40 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm5 fsaverage Tue Jul 18 11:15:42 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm10 fsaverage Tue Jul 18 11:15:46 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm15 fsaverage Tue Jul 18 11:15:51 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm20 fsaverage Tue Jul 18 11:15:55 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm25 fsaverage Tue Jul 18 11:16:00 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm0 fsaverage Tue Jul 18 11:16:05 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm5 fsaverage Tue Jul 18 11:16:07 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm10 fsaverage Tue Jul 18 11:16:12 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm15 fsaverage Tue Jul 18 11:16:16 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm20 fsaverage Tue Jul 18 11:16:21 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm25 fsaverage Tue Jul 18 11:16:26 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm0 fsaverage Tue Jul 18 11:16:31 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm5 fsaverage Tue Jul 18 11:16:33 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm10 fsaverage Tue Jul 18 11:16:37 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm15 fsaverage Tue Jul 18 11:16:42 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm20 fsaverage Tue Jul 18 11:16:47 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm25 fsaverage Tue Jul 18 11:16:52 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm0 fsaverage Tue Jul 18 11:16:57 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm5 fsaverage Tue Jul 18 11:16:59 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm10 fsaverage Tue Jul 18 11:17:03 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm15 fsaverage Tue Jul 18 11:17:08 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm20 fsaverage Tue Jul 18 11:17:13 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm25 fsaverage Tue Jul 18 11:17:18 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm0 fsaverage Tue Jul 18 11:17:23 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm5 fsaverage Tue Jul 18 11:17:25 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm10 fsaverage Tue Jul 18 11:17:29 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm15 fsaverage Tue Jul 18 11:17:34 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm20 fsaverage Tue Jul 18 11:17:38 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm25 fsaverage Tue Jul 18 11:17:43 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm0 fsaverage Tue Jul 18 11:17:49 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm5 fsaverage Tue Jul 18 11:17:51 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm10 fsaverage Tue Jul 18 11:17:55 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm15 fsaverage Tue Jul 18 11:18:00 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm20 fsaverage Tue Jul 18 11:18:04 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm25 fsaverage Tue Jul 18 11:18:09 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm0 fsaverage Tue Jul 18 11:18:14 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm5 fsaverage Tue Jul 18 11:18:17 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm10 fsaverage Tue Jul 18 11:18:21 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm15 fsaverage Tue Jul 18 11:18:25 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm20 fsaverage Tue Jul 18 11:18:30 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm25 fsaverage Tue Jul 18 11:18:35 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm0 fsaverage Tue Jul 18 11:18:40 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm5 fsaverage Tue Jul 18 11:18:42 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm10 fsaverage Tue Jul 18 11:18:47 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm15 fsaverage Tue Jul 18 11:18:51 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm20 fsaverage Tue Jul 18 11:18:56 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm25 fsaverage Tue Jul 18 11:19:01 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm0 fsaverage Tue Jul 18 11:19:06 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm5 fsaverage Tue Jul 18 11:19:08 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm10 fsaverage Tue Jul 18 11:19:12 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm15 fsaverage Tue Jul 18 11:19:17 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm20 fsaverage Tue Jul 18 11:19:21 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm25 fsaverage Tue Jul 18 11:19:26 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm0 fsaverage Tue Jul 18 11:19:32 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm5 fsaverage Tue Jul 18 11:19:34 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm10 fsaverage Tue Jul 18 11:19:38 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm15 fsaverage Tue Jul 18 11:19:42 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm20 fsaverage Tue Jul 18 11:19:47 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm25 fsaverage Tue Jul 18 11:19:52 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm25.fsaverage.mgh --cortex \n
+\n\n#---------------------------------
+# New invocation of recon-all Tue Jul 18 11:19:58 EDT 2017 
+#--------------------------------------------
+#@# Qdec Cache preproc lh thickness fsaverage Tue Jul 18 11:19:59 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas thickness --target fsaverage --out lh.thickness.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh area fsaverage Tue Jul 18 11:20:05 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas area --target fsaverage --out lh.area.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh area.pial fsaverage Tue Jul 18 11:20:13 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas area.pial --target fsaverage --out lh.area.pial.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh volume fsaverage Tue Jul 18 11:20:22 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas volume --target fsaverage --out lh.volume.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh curv fsaverage Tue Jul 18 11:20:30 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas curv --target fsaverage --out lh.curv.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh sulc fsaverage Tue Jul 18 11:20:36 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas sulc --target fsaverage --out lh.sulc.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh white.K fsaverage Tue Jul 18 11:20:42 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas white.K --target fsaverage --out lh.white.K.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh white.H fsaverage Tue Jul 18 11:20:49 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas white.H --target fsaverage --out lh.white.H.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh jacobian_white fsaverage Tue Jul 18 11:20:55 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas jacobian_white --target fsaverage --out lh.jacobian_white.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc lh w-g.pct.mgh fsaverage Tue Jul 18 11:21:01 EDT 2017
+\n mris_preproc --s sub-09 --hemi lh --meas w-g.pct.mgh --target fsaverage --out lh.w-g.pct.mgh.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh thickness fsaverage Tue Jul 18 11:21:07 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas thickness --target fsaverage --out rh.thickness.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh area fsaverage Tue Jul 18 11:21:14 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas area --target fsaverage --out rh.area.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh area.pial fsaverage Tue Jul 18 11:21:22 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas area.pial --target fsaverage --out rh.area.pial.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh volume fsaverage Tue Jul 18 11:21:30 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas volume --target fsaverage --out rh.volume.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh curv fsaverage Tue Jul 18 11:21:39 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas curv --target fsaverage --out rh.curv.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh sulc fsaverage Tue Jul 18 11:21:45 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas sulc --target fsaverage --out rh.sulc.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh white.K fsaverage Tue Jul 18 11:21:52 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas white.K --target fsaverage --out rh.white.K.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh white.H fsaverage Tue Jul 18 11:21:58 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas white.H --target fsaverage --out rh.white.H.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh jacobian_white fsaverage Tue Jul 18 11:22:04 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas jacobian_white --target fsaverage --out rh.jacobian_white.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache preproc rh w-g.pct.mgh fsaverage Tue Jul 18 11:22:11 EDT 2017
+\n mris_preproc --s sub-09 --hemi rh --meas w-g.pct.mgh --target fsaverage --out rh.w-g.pct.mgh.fsaverage.mgh \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm0 fsaverage Tue Jul 18 11:22:17 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm5 fsaverage Tue Jul 18 11:22:19 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm10 fsaverage Tue Jul 18 11:22:24 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm15 fsaverage Tue Jul 18 11:22:28 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm20 fsaverage Tue Jul 18 11:22:32 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh thickness fwhm25 fsaverage Tue Jul 18 11:22:37 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.thickness.fsaverage.mgh --tval lh.thickness.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm0 fsaverage Tue Jul 18 11:22:43 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm5 fsaverage Tue Jul 18 11:22:45 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm10 fsaverage Tue Jul 18 11:22:49 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm15 fsaverage Tue Jul 18 11:22:54 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm20 fsaverage Tue Jul 18 11:22:58 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area fwhm25 fsaverage Tue Jul 18 11:23:03 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.area.fsaverage.mgh --tval lh.area.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm0 fsaverage Tue Jul 18 11:23:09 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm5 fsaverage Tue Jul 18 11:23:11 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm10 fsaverage Tue Jul 18 11:23:16 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm15 fsaverage Tue Jul 18 11:23:21 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm20 fsaverage Tue Jul 18 11:23:26 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh area.pial fwhm25 fsaverage Tue Jul 18 11:23:32 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.area.pial.fsaverage.mgh --tval lh.area.pial.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm0 fsaverage Tue Jul 18 11:23:37 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm5 fsaverage Tue Jul 18 11:23:40 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm10 fsaverage Tue Jul 18 11:23:45 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm15 fsaverage Tue Jul 18 11:23:50 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm20 fsaverage Tue Jul 18 11:23:55 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh volume fwhm25 fsaverage Tue Jul 18 11:24:01 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.volume.fsaverage.mgh --tval lh.volume.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm0 fsaverage Tue Jul 18 11:24:07 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm5 fsaverage Tue Jul 18 11:24:09 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm10 fsaverage Tue Jul 18 11:24:14 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm15 fsaverage Tue Jul 18 11:24:20 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm20 fsaverage Tue Jul 18 11:24:25 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh curv fwhm25 fsaverage Tue Jul 18 11:24:30 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.curv.fsaverage.mgh --tval lh.curv.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm0 fsaverage Tue Jul 18 11:24:36 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm5 fsaverage Tue Jul 18 11:24:38 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm10 fsaverage Tue Jul 18 11:24:43 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm15 fsaverage Tue Jul 18 11:24:48 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm20 fsaverage Tue Jul 18 11:24:54 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh sulc fwhm25 fsaverage Tue Jul 18 11:24:59 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.sulc.fsaverage.mgh --tval lh.sulc.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm0 fsaverage Tue Jul 18 11:25:05 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm5 fsaverage Tue Jul 18 11:25:08 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm10 fsaverage Tue Jul 18 11:25:13 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm15 fsaverage Tue Jul 18 11:25:18 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm20 fsaverage Tue Jul 18 11:25:23 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.K fwhm25 fsaverage Tue Jul 18 11:25:28 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.white.K.fsaverage.mgh --tval lh.white.K.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm0 fsaverage Tue Jul 18 11:25:34 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm5 fsaverage Tue Jul 18 11:25:37 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm10 fsaverage Tue Jul 18 11:25:41 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm15 fsaverage Tue Jul 18 11:25:47 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm20 fsaverage Tue Jul 18 11:25:52 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh white.H fwhm25 fsaverage Tue Jul 18 11:25:57 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.white.H.fsaverage.mgh --tval lh.white.H.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm0 fsaverage Tue Jul 18 11:26:03 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm5 fsaverage Tue Jul 18 11:26:05 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm10 fsaverage Tue Jul 18 11:26:10 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm15 fsaverage Tue Jul 18 11:26:16 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm20 fsaverage Tue Jul 18 11:26:23 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh jacobian_white fwhm25 fsaverage Tue Jul 18 11:26:30 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.jacobian_white.fsaverage.mgh --tval lh.jacobian_white.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm0 fsaverage Tue Jul 18 11:26:36 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 0 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm5 fsaverage Tue Jul 18 11:26:39 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 5 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm10 fsaverage Tue Jul 18 11:26:45 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 10 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm15 fsaverage Tue Jul 18 11:26:50 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 15 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm20 fsaverage Tue Jul 18 11:26:55 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 20 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm25 fsaverage Tue Jul 18 11:27:01 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi lh --fwhm 25 --sval lh.w-g.pct.mgh.fsaverage.mgh --tval lh.w-g.pct.mgh.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm0 fsaverage Tue Jul 18 11:27:07 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm5 fsaverage Tue Jul 18 11:27:10 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm10 fsaverage Tue Jul 18 11:27:15 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm15 fsaverage Tue Jul 18 11:27:21 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm20 fsaverage Tue Jul 18 11:27:27 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh thickness fwhm25 fsaverage Tue Jul 18 11:27:32 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.thickness.fsaverage.mgh --tval rh.thickness.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm0 fsaverage Tue Jul 18 11:27:38 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm5 fsaverage Tue Jul 18 11:27:40 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm10 fsaverage Tue Jul 18 11:27:45 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm15 fsaverage Tue Jul 18 11:27:50 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm20 fsaverage Tue Jul 18 11:27:56 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area fwhm25 fsaverage Tue Jul 18 11:28:01 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.area.fsaverage.mgh --tval rh.area.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm0 fsaverage Tue Jul 18 11:28:07 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm5 fsaverage Tue Jul 18 11:28:09 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm10 fsaverage Tue Jul 18 11:28:14 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm15 fsaverage Tue Jul 18 11:28:19 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm20 fsaverage Tue Jul 18 11:28:24 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh area.pial fwhm25 fsaverage Tue Jul 18 11:28:30 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.area.pial.fsaverage.mgh --tval rh.area.pial.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm0 fsaverage Tue Jul 18 11:28:35 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm5 fsaverage Tue Jul 18 11:28:38 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm10 fsaverage Tue Jul 18 11:28:42 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm15 fsaverage Tue Jul 18 11:28:47 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm20 fsaverage Tue Jul 18 11:28:52 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh volume fwhm25 fsaverage Tue Jul 18 11:28:58 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.volume.fsaverage.mgh --tval rh.volume.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm0 fsaverage Tue Jul 18 11:29:03 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm5 fsaverage Tue Jul 18 11:29:05 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm10 fsaverage Tue Jul 18 11:29:10 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm15 fsaverage Tue Jul 18 11:29:15 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm20 fsaverage Tue Jul 18 11:29:20 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh curv fwhm25 fsaverage Tue Jul 18 11:29:25 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.curv.fsaverage.mgh --tval rh.curv.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm0 fsaverage Tue Jul 18 11:29:31 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm5 fsaverage Tue Jul 18 11:29:34 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm10 fsaverage Tue Jul 18 11:29:39 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm15 fsaverage Tue Jul 18 11:29:44 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm20 fsaverage Tue Jul 18 11:29:49 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh sulc fwhm25 fsaverage Tue Jul 18 11:29:54 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.sulc.fsaverage.mgh --tval rh.sulc.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm0 fsaverage Tue Jul 18 11:30:00 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm5 fsaverage Tue Jul 18 11:30:03 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm10 fsaverage Tue Jul 18 11:30:08 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm15 fsaverage Tue Jul 18 11:30:13 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm20 fsaverage Tue Jul 18 11:30:19 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.K fwhm25 fsaverage Tue Jul 18 11:30:24 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.white.K.fsaverage.mgh --tval rh.white.K.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm0 fsaverage Tue Jul 18 11:30:30 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm5 fsaverage Tue Jul 18 11:30:32 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm10 fsaverage Tue Jul 18 11:30:38 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm15 fsaverage Tue Jul 18 11:30:44 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm20 fsaverage Tue Jul 18 11:30:49 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh white.H fwhm25 fsaverage Tue Jul 18 11:30:55 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.white.H.fsaverage.mgh --tval rh.white.H.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm0 fsaverage Tue Jul 18 11:31:01 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm5 fsaverage Tue Jul 18 11:31:04 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm10 fsaverage Tue Jul 18 11:31:10 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm15 fsaverage Tue Jul 18 11:31:15 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm20 fsaverage Tue Jul 18 11:31:20 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh jacobian_white fwhm25 fsaverage Tue Jul 18 11:31:26 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.jacobian_white.fsaverage.mgh --tval rh.jacobian_white.fwhm25.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm0 fsaverage Tue Jul 18 11:31:31 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 0 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm0.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm5 fsaverage Tue Jul 18 11:31:34 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 5 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm5.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm10 fsaverage Tue Jul 18 11:31:38 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 10 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm10.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm15 fsaverage Tue Jul 18 11:31:43 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 15 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm15.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm20 fsaverage Tue Jul 18 11:31:48 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 20 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm20.fsaverage.mgh --cortex \n
+#--------------------------------------------
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm25 fsaverage Tue Jul 18 11:31:54 EDT 2017
+\n mri_surf2surf --prune --s fsaverage --hemi rh --fwhm 25 --sval rh.w-g.pct.mgh.fsaverage.mgh --tval rh.w-g.pct.mgh.fwhm25.fsaverage.mgh --cortex \n
