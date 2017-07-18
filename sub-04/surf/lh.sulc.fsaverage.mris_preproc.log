@@ -1,0 +1,86 @@
+Tue Jul 18 10:39:12 EDT 2017
+setenv SUBJECTS_DIR /Users/freesurfer_user/Documents/github/Edits-FreeSurfer-Training-Data
+cd /Users/freesurfer_user/Documents/github/Edits-FreeSurfer-Training-Data/sub-04/surf
+/Applications/freesurfer/bin/mris_preproc --s sub-04 --hemi lh --meas sulc --target fsaverage --out lh.sulc.fsaverage.mgh
+
+Darwin CFMI-iMac-10.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+$Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
+freesurfer-Darwin-OSX-stable-pub-v6.0.0-2beb96c
+tmpdir is ./tmp.mris_preproc.47531
+Src lh sphere.reg
+Trg lh sphere.reg
+
+\n\n
+---------------------------------------------------
+#@# 1/1 sub-04 Tue Jul 18 10:39:12 EDT 2017 --------------
+-----------------------
+mri_surf2surf --srcsubject sub-04 --srchemi lh --srcsurfreg sphere.reg --trgsubject fsaverage --trghemi lh --trgsurfreg sphere.reg --tval ./tmp.mris_preproc.47531/sub-04.1.mgh --sval /Users/freesurfer_user/Documents/github/Edits-FreeSurfer-Training-Data/sub-04/surf/lh.sulc --sfmt curv --noreshape --cortex
+Source registration surface changed to sphere.reg
+Target registration surface changed to sphere.reg
+
+$Id: mri_surf2surf.c,v 1.103 2015/11/05 22:07:33 greve Exp $
+
+setenv SUBJECTS_DIR /Users/freesurfer_user/Documents/github/Edits-FreeSurfer-Training-Data
+cd /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/sub-04/surf
+mri_surf2surf --srcsubject sub-04 --srchemi lh --srcsurfreg sphere.reg --trgsubject fsaverage --trghemi lh --trgsurfreg sphere.reg --tval ./tmp.mris_preproc.47531/sub-04.1.mgh --sval /Users/freesurfer_user/Documents/github/Edits-FreeSurfer-Training-Data/sub-04/surf/lh.sulc --sfmt curv --noreshape --cortex 
+
+sysname  Darwin
+hostname CFMI-iMac-10.local
+machine  x86_64
+user     freesurfer_user
+srcsubject = sub-04
+srcval     = /Users/freesurfer_user/Documents/github/Edits-FreeSurfer-Training-Data/sub-04/surf/lh.sulc
+srctype    = curv
+trgsubject = fsaverage
+trgval     = ./tmp.mris_preproc.47531/sub-04.1.mgh
+trgtype    = 
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+srchemi    = lh
+trghemi    = lh
+frame      = 0
+fwhm-in    = 0
+fwhm-out   = 0
+label-src  = lh.cortex.label
+label-trg  = lh.cortex.label
+OKToRevFaceOrder  = 1
+UseDualHemi = 0
+Reading source surface reg /Users/freesurfer_user/Documents/github/Edits-FreeSurfer-Training-Data/sub-04/surf/lh.sphere.reg
+Loading source data
+Reading curvature file /Users/freesurfer_user/Documents/github/Edits-FreeSurfer-Training-Data/sub-04/surf/lh.sulc
+Reading source subject label mask lh.cortex.label
+masking the input
+Reading target surface reg /Users/freesurfer_user/Documents/github/Edits-FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Done
+Using surf2surf_nnfr()
+Mapping Source Volume onto Source Subject Surface
+surf2surf_nnfr: building source hash (res=16).
+Surf2Surf: Forward Loop (163842)
+
+surf2surf_nnfr: building target hash (res=16).
+Surf2Surf: Reverse Loop (163828)
+Reverse Loop had 37868 hits
+Surf2Surf: Dividing by number of hits (163842)
+INFO: nSrcLost = 0
+nTrg121 = 135873, nTrgMulti = 27969, MnTrgMultiHits = 2.35393
+nSrc121 = 133142, nSrcLost =     0, nSrcMulti = 30686, MnSrcMultiHits = 2.2345
+Reading target space mask label lh.cortex.label
+masking the input
+Saving target data
+Saving to ./tmp.mris_preproc.47531/sub-04.1.mgh
+\n\n
+-----------------------
+mri_concat ./tmp.mris_preproc.47531/sub-04.1.mgh --o lh.sulc.fsaverage.mgh
+ninputs = 1
+Checking inputs
+nframestot = 1
+Allocing output
+Done allocing
+nframes = 1
+Writing to lh.sulc.fsaverage.mgh
+\n\n
+Cleaning up
+-----------------------
+rm -r ./tmp.mris_preproc.47531
+Tue Jul 18 10:39:20 EDT 2017
+mris_preproc done
