@@ -118,3 +118,15 @@ talairach_avi log file is transforms/talairach_avi.log...
 \n cp ../surf/lh.inflated.nofix ../surf/lh.inflated \n
 #@# Fix Topology lh Fri Jul  7 09:55:15 EDT 2017
 \n mris_fix_topology -rusage /Volumes/CFMI-CFS/sync/ADS/data/mri/FreeSurfer-Training-Data/sub-05/touch/rusage.mris_fix_topology.lh.dat -mgz -sphere qsphere.nofix -ga -seed 1234 sub-05 lh \n
+\n\n#---------------------------------
+# New invocation of recon-all Thu Jul 13 10:49:33 EDT 2017 
+#--------------------------------------------
+#@# MotionCor Thu Jul 13 10:49:33 EDT 2017
+\n\n#---------------------------------
+# New invocation of recon-all Thu Jul 13 10:51:25 EDT 2017 
+#--------------------------------------------
+#@# MotionCor Thu Jul 13 10:51:25 EDT 2017
+\n\n#---------------------------------
+# New invocation of recon-all Tue Jul 18 15:22:29 EDT 2017 
+#--------------------------------------------
+#@# MotionCor Tue Jul 18 15:22:29 EDT 2017

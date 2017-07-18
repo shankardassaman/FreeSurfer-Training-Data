@@ -73,3 +73,33 @@ status file for recon-all
 Fri Jul  7 09:55:15 EDT 2017
 #@# Fix Topology Copy lh Fri Jul  7 09:55:15 EDT 2017
 #@# Fix Topology lh Fri Jul  7 09:55:15 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Thu Jul 13 10:49:33 EDT 2017
+#@# MotionCor Thu Jul 13 10:49:33 EDT 2017
+Darwin CFMI-iMac-10.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+
+recon-all -s sub-05 exited with ERRORS at Thu Jul 13 10:49:33 EDT 2017
+
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Thu Jul 13 10:51:25 EDT 2017
+#@# MotionCor Thu Jul 13 10:51:25 EDT 2017
+Darwin CFMI-iMac-10.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+
+recon-all -s sub-05 exited with ERRORS at Thu Jul 13 10:51:25 EDT 2017
+
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Tue Jul 18 15:22:29 EDT 2017
+#@# MotionCor Tue Jul 18 15:22:29 EDT 2017
+Darwin CFMI-iMac-10.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+
+recon-all -s sub-05 exited with ERRORS at Tue Jul 18 15:22:29 EDT 2017
+
