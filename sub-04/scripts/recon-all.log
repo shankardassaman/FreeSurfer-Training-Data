@@ -11080,3 +11080,18 @@ Started at Fri Jul 7 16:15:36 EDT 2017
 Ended   at Fri Jul 7 16:21:04 EDT 2017
 #@#%# recon-all-run-time-hours 0.091
 recon-all -s sub-04 finished without error at Fri Jul  7 16:21:04 EDT 2017
+Tue Jul 18 15:22:29 EDT 2017
+/Users/freesurfer_user/Documents/Github/FreeSurfer-Training-Data/sub-04
+/Applications/freesurfer/bin/recon-all
+-s /Users/freesurfer_user/Documents/Github/FreeSurfer-Training-Data/sub-04 -motioncor
+#--------------------------------------------
+#@# MotionCor Tue Jul 18 15:22:29 EDT 2017
+ERROR: no run data found in /Users/freesurfer_user/Documents/Github/FreeSurfer-Training-Data/sub-04/mri. Make sure to
+have a volume called 001.mgz in  /Users/freesurfer_user/Documents/Github/FreeSurfer-Training-Data/sub-04/mri/orig.
+If you have a second run of data call it 002.mgz, etc.
+See also: http://surfer.nmr.mgh.harvard.edu/fswiki/FsTutorial/Conversion
+Darwin CFMI-iMac-10.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+
+recon-all -s sub-04 exited with ERRORS at Tue Jul 18 15:22:29 EDT 2017
+
+To report a problem, see http://surfer.nmr.mgh.harvard.edu/fswiki/BugReporting
