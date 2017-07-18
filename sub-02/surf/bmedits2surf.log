@@ -1,14 +1,14 @@
 Log file for bmedits2surf
-Tue Jul 18 15:03:13 EDT 2017
+Tue Jul 18 15:33:02 EDT 2017
 
 setenv SUBJECTS_DIR /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data
 cd /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data
-/Applications/freesurfer/bin/bmedits2surf --s sub-02
+/Applications/freesurfer/bin/bmedits2surf --s sub-02 --overwrite
 
 freesurfer-Darwin-OSX-stable-pub-v6.0.0-2beb96c
 $Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
 Darwin CFMI-iMac-10.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
-mri_concat /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/mri/brainmask.auto.mgz /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/mri/brainmask.mgz --paired-diff --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh
+mri_concat /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/mri/brainmask.auto.mgz /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/mri/brainmask.mgz --paired-diff --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh
 ninputs = 2
 Checking inputs
 nframestot = 2
@@ -16,22 +16,22 @@ Allocing output
 Done allocing
 Combining pairs
 nframes = 1
-Writing to /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh
-mri_binarize --abs --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh --min .5 --abs --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh
+Writing to /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh
+mri_binarize --abs --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh --min .5 --abs --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh
 
 $Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
 cwd /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data
-cmdline mri_binarize.bin --abs --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh --min .5 --abs --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh 
+cmdline mri_binarize.bin --abs --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh --min .5 --abs --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh 
 sysname  Darwin
 hostname CFMI-iMac-10.local
 machine  x86_64
 user     freesurfer_user
 
-input      /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh
+input      /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh
 frame      0
 nErode3d   0
 nErode2d   0
-output     /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh
+output     /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh
 Binarizing based on threshold
 min        0.5
 max        +infinity
@@ -44,11 +44,11 @@ Counting number of voxels in first frame
 Found 1119317 voxels in final mask
 Count: 1119317 1119317.000000 16777216 6.671649
 mri_binarize done
-mri_binarize --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/mri/brainmask.mgz --match 1 --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.erase.mgh --mask /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/stats/bm.erase.dat
+mri_binarize --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/mri/brainmask.mgz --match 1 --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.erase.mgh --mask /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/stats/bm.erase.dat
 
 $Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
 cwd /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data
-cmdline mri_binarize.bin --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/mri/brainmask.mgz --match 1 --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.erase.mgh --mask /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/stats/bm.erase.dat 
+cmdline mri_binarize.bin --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/mri/brainmask.mgz --match 1 --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.erase.mgh --mask /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/stats/bm.erase.dat 
 sysname  Darwin
 hostname CFMI-iMac-10.local
 machine  x86_64
@@ -58,23 +58,23 @@ input      /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Dat
 frame      0
 nErode3d   0
 nErode2d   0
-output     /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.erase.mgh
+output     /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.erase.mgh
 Binarizing based on matching values
 nMatch 1
  0     1
 binval        1
 binvalnot     0
-mask       /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh
+mask       /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh
 maskthresh 0.500000
-Loading mask /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh
+Loading mask /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh
 fstart = 0, fend = 0, nframes = 1
 Found 11772 values in range
 Counting number of voxels in first frame
 Found 11772 voxels in final mask
 Count: 11772 11772.000000 16777216 0.070167
 mri_binarize done
-mri_vol2surf --regheader sub-02 --hemi lh --mov /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.erase.mgh --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/lh.bmerase.fsa.mgh --interp nearest --projfrac-max 0 2 .3 --trgsubject fsaverage
-srcvol = /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.erase.mgh
+mri_vol2surf --regheader sub-02 --hemi lh --mov /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.erase.mgh --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/lh.bmerase.fsa.mgh --interp nearest --projfrac-max 0 2 .3 --trgsubject fsaverage
+srcvol = /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.erase.mgh
 srcreg unspecified
 srcregold = 0
 srcwarp unspecified
@@ -166,8 +166,8 @@ Counting number of voxels in first frame
 Found 494 voxels in final mask
 Count: 494 494.000000 163842 0.301510
 mri_binarize done
-mri_vol2surf --regheader sub-02 --hemi rh --mov /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.erase.mgh --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/rh.bmerase.fsa.mgh --interp nearest --projfrac-max 0 2 .3 --trgsubject fsaverage
-srcvol = /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.erase.mgh
+mri_vol2surf --regheader sub-02 --hemi rh --mov /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.erase.mgh --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/rh.bmerase.fsa.mgh --interp nearest --projfrac-max 0 2 .3 --trgsubject fsaverage
+srcvol = /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.erase.mgh
 srcreg unspecified
 srcregold = 0
 srcwarp unspecified
@@ -259,7 +259,7 @@ Counting number of voxels in first frame
 Found 3320 voxels in final mask
 Count: 3320 3320.000000 163842 2.026342
 mri_binarize done
-mri_concat /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/diff.mgh /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.erase.mgh --paired-diff --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.clone.mgh
+mri_concat /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/diff.mgh /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.erase.mgh --paired-diff --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.clone.mgh
 ninputs = 2
 Checking inputs
 nframestot = 2
@@ -267,18 +267,18 @@ Allocing output
 Done allocing
 Combining pairs
 nframes = 1
-Writing to /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.clone.mgh
-mri_binarize --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.clone.mgh --match 1 --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/stats/bm.clone.dat
+Writing to /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.clone.mgh
+mri_binarize --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.clone.mgh --match 1 --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/stats/bm.clone.dat
 
 $Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
 cwd /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data
-cmdline mri_binarize.bin --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.clone.mgh --match 1 --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/stats/bm.clone.dat 
+cmdline mri_binarize.bin --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.clone.mgh --match 1 --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/stats/bm.clone.dat 
 sysname  Darwin
 hostname CFMI-iMac-10.local
 machine  x86_64
 user     freesurfer_user
 
-input      /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.clone.mgh
+input      /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.clone.mgh
 frame      0
 nErode3d   0
 nErode2d   0
@@ -294,8 +294,8 @@ Counting number of voxels in first frame
 Found 1107545 voxels in final mask
 Count: 1107545 1107545.000000 16777216 6.601483
 mri_binarize done
-mri_vol2surf --regheader sub-02 --hemi lh --mov /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.clone.mgh --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/lh.bmclone.fsa.mgh --interp nearest --projfrac-max 0 2 .3 --trgsubject fsaverage
-srcvol = /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.clone.mgh
+mri_vol2surf --regheader sub-02 --hemi lh --mov /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.clone.mgh --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/lh.bmclone.fsa.mgh --interp nearest --projfrac-max 0 2 .3 --trgsubject fsaverage
+srcvol = /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.clone.mgh
 srcreg unspecified
 srcregold = 0
 srcwarp unspecified
@@ -386,8 +386,8 @@ Counting number of voxels in first frame
 Found 157749 voxels in final mask
 Count: 157749 157749.000000 163842 96.281173
 mri_binarize done
-mri_vol2surf --regheader sub-02 --hemi rh --mov /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.clone.mgh --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/rh.bmclone.fsa.mgh --interp nearest --projfrac-max 0 2 .3 --trgsubject fsaverage
-srcvol = /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.90600/bm.clone.mgh
+mri_vol2surf --regheader sub-02 --hemi rh --mov /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.clone.mgh --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/rh.bmclone.fsa.mgh --interp nearest --projfrac-max 0 2 .3 --trgsubject fsaverage
+srcvol = /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-02/surf/tmpdir.bmedits2surf.98184/bm.clone.mgh
 srcreg unspecified
 srcregold = 0
 srcwarp unspecified
@@ -479,9 +479,9 @@ Found 157618 voxels in final mask
 Count: 157618 157618.000000 163842 96.201218
 mri_binarize done
  
-Started at Tue Jul 18 15:03:13 EDT 2017 
-Ended   at Tue Jul 18 15:04:04 EDT 2017
-Bmedits2surf-Run-Time-Sec 51
+Started at Tue Jul 18 15:33:02 EDT 2017 
+Ended   at Tue Jul 18 15:33:51 EDT 2017
+Bmedits2surf-Run-Time-Sec 49
 Bmedits2surf-Run-Time-Hours 0.01
  
 bmedits2surf Done
