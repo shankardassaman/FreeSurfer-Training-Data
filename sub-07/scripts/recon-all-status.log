@@ -871,3 +871,149 @@ status file for recon-all
 Fri Jul 14 01:45:21 EDT 2017
 #@# BA_exvivo Labels rh Fri Jul 14 01:45:21 EDT 2017
 recon-all -s sub-07 finished without error at Fri Jul 14 01:49:56 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Tue Jul 18 10:55:37 EDT 2017
+#@# Qdec Cache preproc lh thickness fsaverage Tue Jul 18 10:55:37 EDT 2017
+#@# Qdec Cache preproc lh area fsaverage Tue Jul 18 10:55:45 EDT 2017
+#@# Qdec Cache preproc lh area.pial fsaverage Tue Jul 18 10:55:54 EDT 2017
+#@# Qdec Cache preproc lh volume fsaverage Tue Jul 18 10:56:03 EDT 2017
+#@# Qdec Cache preproc lh curv fsaverage Tue Jul 18 10:56:12 EDT 2017
+#@# Qdec Cache preproc lh sulc fsaverage Tue Jul 18 10:56:21 EDT 2017
+#@# Qdec Cache preproc lh white.K fsaverage Tue Jul 18 10:56:28 EDT 2017
+#@# Qdec Cache preproc lh white.H fsaverage Tue Jul 18 10:56:36 EDT 2017
+#@# Qdec Cache preproc lh jacobian_white fsaverage Tue Jul 18 10:56:44 EDT 2017
+#@# Qdec Cache preproc lh w-g.pct.mgh fsaverage Tue Jul 18 10:56:53 EDT 2017
+#@# Qdec Cache preproc rh thickness fsaverage Tue Jul 18 10:57:02 EDT 2017
+#@# Qdec Cache preproc rh area fsaverage Tue Jul 18 10:57:09 EDT 2017
+#@# Qdec Cache preproc rh area.pial fsaverage Tue Jul 18 10:57:19 EDT 2017
+#@# Qdec Cache preproc rh volume fsaverage Tue Jul 18 10:57:29 EDT 2017
+#@# Qdec Cache preproc rh curv fsaverage Tue Jul 18 10:57:39 EDT 2017
+#@# Qdec Cache preproc rh sulc fsaverage Tue Jul 18 10:57:46 EDT 2017
+#@# Qdec Cache preproc rh white.K fsaverage Tue Jul 18 10:57:54 EDT 2017
+#@# Qdec Cache preproc rh white.H fsaverage Tue Jul 18 10:58:01 EDT 2017
+#@# Qdec Cache preproc rh jacobian_white fsaverage Tue Jul 18 10:58:09 EDT 2017
+#@# Qdec Cache preproc rh w-g.pct.mgh fsaverage Tue Jul 18 10:58:16 EDT 2017
+#@# Qdec Cache surf2surf lh thickness fwhm0 fsaverage Tue Jul 18 10:58:24 EDT 2017
+#@# Qdec Cache surf2surf lh thickness fwhm5 fsaverage Tue Jul 18 10:58:27 EDT 2017
+#@# Qdec Cache surf2surf lh thickness fwhm10 fsaverage Tue Jul 18 10:58:32 EDT 2017
+#@# Qdec Cache surf2surf lh thickness fwhm15 fsaverage Tue Jul 18 10:58:37 EDT 2017
+#@# Qdec Cache surf2surf lh thickness fwhm20 fsaverage Tue Jul 18 10:58:43 EDT 2017
+#@# Qdec Cache surf2surf lh thickness fwhm25 fsaverage Tue Jul 18 10:58:48 EDT 2017
+#@# Qdec Cache surf2surf lh area fwhm0 fsaverage Tue Jul 18 10:58:55 EDT 2017
+#@# Qdec Cache surf2surf lh area fwhm5 fsaverage Tue Jul 18 10:58:57 EDT 2017
+#@# Qdec Cache surf2surf lh area fwhm10 fsaverage Tue Jul 18 10:59:03 EDT 2017
+#@# Qdec Cache surf2surf lh area fwhm15 fsaverage Tue Jul 18 10:59:08 EDT 2017
+#@# Qdec Cache surf2surf lh area fwhm20 fsaverage Tue Jul 18 10:59:14 EDT 2017
+#@# Qdec Cache surf2surf lh area fwhm25 fsaverage Tue Jul 18 10:59:20 EDT 2017
+#@# Qdec Cache surf2surf lh area.pial fwhm0 fsaverage Tue Jul 18 10:59:26 EDT 2017
+#@# Qdec Cache surf2surf lh area.pial fwhm5 fsaverage Tue Jul 18 10:59:29 EDT 2017
+#@# Qdec Cache surf2surf lh area.pial fwhm10 fsaverage Tue Jul 18 10:59:34 EDT 2017
+#@# Qdec Cache surf2surf lh area.pial fwhm15 fsaverage Tue Jul 18 10:59:40 EDT 2017
+#@# Qdec Cache surf2surf lh area.pial fwhm20 fsaverage Tue Jul 18 10:59:45 EDT 2017
+#@# Qdec Cache surf2surf lh area.pial fwhm25 fsaverage Tue Jul 18 10:59:52 EDT 2017
+#@# Qdec Cache surf2surf lh volume fwhm0 fsaverage Tue Jul 18 10:59:58 EDT 2017
+#@# Qdec Cache surf2surf lh volume fwhm5 fsaverage Tue Jul 18 11:00:01 EDT 2017
+#@# Qdec Cache surf2surf lh volume fwhm10 fsaverage Tue Jul 18 11:00:06 EDT 2017
+#@# Qdec Cache surf2surf lh volume fwhm15 fsaverage Tue Jul 18 11:00:12 EDT 2017
+#@# Qdec Cache surf2surf lh volume fwhm20 fsaverage Tue Jul 18 11:00:17 EDT 2017
+#@# Qdec Cache surf2surf lh volume fwhm25 fsaverage Tue Jul 18 11:00:23 EDT 2017
+#@# Qdec Cache surf2surf lh curv fwhm0 fsaverage Tue Jul 18 11:00:30 EDT 2017
+#@# Qdec Cache surf2surf lh curv fwhm5 fsaverage Tue Jul 18 11:00:32 EDT 2017
+#@# Qdec Cache surf2surf lh curv fwhm10 fsaverage Tue Jul 18 11:00:38 EDT 2017
+#@# Qdec Cache surf2surf lh curv fwhm15 fsaverage Tue Jul 18 11:00:43 EDT 2017
+#@# Qdec Cache surf2surf lh curv fwhm20 fsaverage Tue Jul 18 11:00:49 EDT 2017
+#@# Qdec Cache surf2surf lh curv fwhm25 fsaverage Tue Jul 18 11:00:55 EDT 2017
+#@# Qdec Cache surf2surf lh sulc fwhm0 fsaverage Tue Jul 18 11:01:02 EDT 2017
+#@# Qdec Cache surf2surf lh sulc fwhm5 fsaverage Tue Jul 18 11:01:04 EDT 2017
+#@# Qdec Cache surf2surf lh sulc fwhm10 fsaverage Tue Jul 18 11:01:09 EDT 2017
+#@# Qdec Cache surf2surf lh sulc fwhm15 fsaverage Tue Jul 18 11:01:15 EDT 2017
+#@# Qdec Cache surf2surf lh sulc fwhm20 fsaverage Tue Jul 18 11:01:21 EDT 2017
+#@# Qdec Cache surf2surf lh sulc fwhm25 fsaverage Tue Jul 18 11:01:27 EDT 2017
+#@# Qdec Cache surf2surf lh white.K fwhm0 fsaverage Tue Jul 18 11:01:33 EDT 2017
+#@# Qdec Cache surf2surf lh white.K fwhm5 fsaverage Tue Jul 18 11:01:36 EDT 2017
+#@# Qdec Cache surf2surf lh white.K fwhm10 fsaverage Tue Jul 18 11:01:41 EDT 2017
+#@# Qdec Cache surf2surf lh white.K fwhm15 fsaverage Tue Jul 18 11:01:47 EDT 2017
+#@# Qdec Cache surf2surf lh white.K fwhm20 fsaverage Tue Jul 18 11:01:52 EDT 2017
+#@# Qdec Cache surf2surf lh white.K fwhm25 fsaverage Tue Jul 18 11:01:59 EDT 2017
+#@# Qdec Cache surf2surf lh white.H fwhm0 fsaverage Tue Jul 18 11:02:05 EDT 2017
+#@# Qdec Cache surf2surf lh white.H fwhm5 fsaverage Tue Jul 18 11:02:08 EDT 2017
+#@# Qdec Cache surf2surf lh white.H fwhm10 fsaverage Tue Jul 18 11:02:13 EDT 2017
+#@# Qdec Cache surf2surf lh white.H fwhm15 fsaverage Tue Jul 18 11:02:19 EDT 2017
+#@# Qdec Cache surf2surf lh white.H fwhm20 fsaverage Tue Jul 18 11:02:24 EDT 2017
+#@# Qdec Cache surf2surf lh white.H fwhm25 fsaverage Tue Jul 18 11:02:31 EDT 2017
+#@# Qdec Cache surf2surf lh jacobian_white fwhm0 fsaverage Tue Jul 18 11:02:37 EDT 2017
+#@# Qdec Cache surf2surf lh jacobian_white fwhm5 fsaverage Tue Jul 18 11:02:40 EDT 2017
+#@# Qdec Cache surf2surf lh jacobian_white fwhm10 fsaverage Tue Jul 18 11:02:45 EDT 2017
+#@# Qdec Cache surf2surf lh jacobian_white fwhm15 fsaverage Tue Jul 18 11:02:51 EDT 2017
+#@# Qdec Cache surf2surf lh jacobian_white fwhm20 fsaverage Tue Jul 18 11:02:56 EDT 2017
+#@# Qdec Cache surf2surf lh jacobian_white fwhm25 fsaverage Tue Jul 18 11:03:02 EDT 2017
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm0 fsaverage Tue Jul 18 11:03:09 EDT 2017
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm5 fsaverage Tue Jul 18 11:03:11 EDT 2017
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm10 fsaverage Tue Jul 18 11:03:17 EDT 2017
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm15 fsaverage Tue Jul 18 11:03:22 EDT 2017
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm20 fsaverage Tue Jul 18 11:03:28 EDT 2017
+#@# Qdec Cache surf2surf lh w-g.pct.mgh fwhm25 fsaverage Tue Jul 18 11:03:34 EDT 2017
+#@# Qdec Cache surf2surf rh thickness fwhm0 fsaverage Tue Jul 18 11:03:41 EDT 2017
+#@# Qdec Cache surf2surf rh thickness fwhm5 fsaverage Tue Jul 18 11:03:43 EDT 2017
+#@# Qdec Cache surf2surf rh thickness fwhm10 fsaverage Tue Jul 18 11:03:49 EDT 2017
+#@# Qdec Cache surf2surf rh thickness fwhm15 fsaverage Tue Jul 18 11:03:54 EDT 2017
+#@# Qdec Cache surf2surf rh thickness fwhm20 fsaverage Tue Jul 18 11:04:00 EDT 2017
+#@# Qdec Cache surf2surf rh thickness fwhm25 fsaverage Tue Jul 18 11:04:07 EDT 2017
+#@# Qdec Cache surf2surf rh area fwhm0 fsaverage Tue Jul 18 11:04:13 EDT 2017
+#@# Qdec Cache surf2surf rh area fwhm5 fsaverage Tue Jul 18 11:04:16 EDT 2017
+#@# Qdec Cache surf2surf rh area fwhm10 fsaverage Tue Jul 18 11:04:21 EDT 2017
+#@# Qdec Cache surf2surf rh area fwhm15 fsaverage Tue Jul 18 11:04:26 EDT 2017
+#@# Qdec Cache surf2surf rh area fwhm20 fsaverage Tue Jul 18 11:04:32 EDT 2017
+#@# Qdec Cache surf2surf rh area fwhm25 fsaverage Tue Jul 18 11:04:38 EDT 2017
+#@# Qdec Cache surf2surf rh area.pial fwhm0 fsaverage Tue Jul 18 11:04:44 EDT 2017
+#@# Qdec Cache surf2surf rh area.pial fwhm5 fsaverage Tue Jul 18 11:04:47 EDT 2017
+#@# Qdec Cache surf2surf rh area.pial fwhm10 fsaverage Tue Jul 18 11:04:53 EDT 2017
+#@# Qdec Cache surf2surf rh area.pial fwhm15 fsaverage Tue Jul 18 11:04:58 EDT 2017
+#@# Qdec Cache surf2surf rh area.pial fwhm20 fsaverage Tue Jul 18 11:05:04 EDT 2017
+#@# Qdec Cache surf2surf rh area.pial fwhm25 fsaverage Tue Jul 18 11:05:10 EDT 2017
+#@# Qdec Cache surf2surf rh volume fwhm0 fsaverage Tue Jul 18 11:05:16 EDT 2017
+#@# Qdec Cache surf2surf rh volume fwhm5 fsaverage Tue Jul 18 11:05:19 EDT 2017
+#@# Qdec Cache surf2surf rh volume fwhm10 fsaverage Tue Jul 18 11:05:24 EDT 2017
+#@# Qdec Cache surf2surf rh volume fwhm15 fsaverage Tue Jul 18 11:05:30 EDT 2017
+#@# Qdec Cache surf2surf rh volume fwhm20 fsaverage Tue Jul 18 11:05:36 EDT 2017
+#@# Qdec Cache surf2surf rh volume fwhm25 fsaverage Tue Jul 18 11:05:42 EDT 2017
+#@# Qdec Cache surf2surf rh curv fwhm0 fsaverage Tue Jul 18 11:05:48 EDT 2017
+#@# Qdec Cache surf2surf rh curv fwhm5 fsaverage Tue Jul 18 11:05:51 EDT 2017
+#@# Qdec Cache surf2surf rh curv fwhm10 fsaverage Tue Jul 18 11:05:56 EDT 2017
+#@# Qdec Cache surf2surf rh curv fwhm15 fsaverage Tue Jul 18 11:06:02 EDT 2017
+#@# Qdec Cache surf2surf rh curv fwhm20 fsaverage Tue Jul 18 11:06:07 EDT 2017
+#@# Qdec Cache surf2surf rh curv fwhm25 fsaverage Tue Jul 18 11:06:14 EDT 2017
+#@# Qdec Cache surf2surf rh sulc fwhm0 fsaverage Tue Jul 18 11:06:20 EDT 2017
+#@# Qdec Cache surf2surf rh sulc fwhm5 fsaverage Tue Jul 18 11:06:23 EDT 2017
+#@# Qdec Cache surf2surf rh sulc fwhm10 fsaverage Tue Jul 18 11:06:28 EDT 2017
+#@# Qdec Cache surf2surf rh sulc fwhm15 fsaverage Tue Jul 18 11:06:34 EDT 2017
+#@# Qdec Cache surf2surf rh sulc fwhm20 fsaverage Tue Jul 18 11:06:40 EDT 2017
+#@# Qdec Cache surf2surf rh sulc fwhm25 fsaverage Tue Jul 18 11:06:45 EDT 2017
+#@# Qdec Cache surf2surf rh white.K fwhm0 fsaverage Tue Jul 18 11:06:51 EDT 2017
+#@# Qdec Cache surf2surf rh white.K fwhm5 fsaverage Tue Jul 18 11:06:53 EDT 2017
+#@# Qdec Cache surf2surf rh white.K fwhm10 fsaverage Tue Jul 18 11:06:59 EDT 2017
+#@# Qdec Cache surf2surf rh white.K fwhm15 fsaverage Tue Jul 18 11:07:03 EDT 2017
+#@# Qdec Cache surf2surf rh white.K fwhm20 fsaverage Tue Jul 18 11:07:08 EDT 2017
+#@# Qdec Cache surf2surf rh white.K fwhm25 fsaverage Tue Jul 18 11:07:14 EDT 2017
+#@# Qdec Cache surf2surf rh white.H fwhm0 fsaverage Tue Jul 18 11:07:19 EDT 2017
+#@# Qdec Cache surf2surf rh white.H fwhm5 fsaverage Tue Jul 18 11:07:22 EDT 2017
+#@# Qdec Cache surf2surf rh white.H fwhm10 fsaverage Tue Jul 18 11:07:27 EDT 2017
+#@# Qdec Cache surf2surf rh white.H fwhm15 fsaverage Tue Jul 18 11:07:32 EDT 2017
+#@# Qdec Cache surf2surf rh white.H fwhm20 fsaverage Tue Jul 18 11:07:36 EDT 2017
+#@# Qdec Cache surf2surf rh white.H fwhm25 fsaverage Tue Jul 18 11:07:42 EDT 2017
+#@# Qdec Cache surf2surf rh jacobian_white fwhm0 fsaverage Tue Jul 18 11:07:48 EDT 2017
+#@# Qdec Cache surf2surf rh jacobian_white fwhm5 fsaverage Tue Jul 18 11:07:50 EDT 2017
+#@# Qdec Cache surf2surf rh jacobian_white fwhm10 fsaverage Tue Jul 18 11:07:55 EDT 2017
+#@# Qdec Cache surf2surf rh jacobian_white fwhm15 fsaverage Tue Jul 18 11:08:00 EDT 2017
+#@# Qdec Cache surf2surf rh jacobian_white fwhm20 fsaverage Tue Jul 18 11:08:05 EDT 2017
+#@# Qdec Cache surf2surf rh jacobian_white fwhm25 fsaverage Tue Jul 18 11:08:10 EDT 2017
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm0 fsaverage Tue Jul 18 11:08:16 EDT 2017
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm5 fsaverage Tue Jul 18 11:08:18 EDT 2017
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm10 fsaverage Tue Jul 18 11:08:23 EDT 2017
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm15 fsaverage Tue Jul 18 11:08:28 EDT 2017
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm20 fsaverage Tue Jul 18 11:08:33 EDT 2017
+#@# Qdec Cache surf2surf rh w-g.pct.mgh fwhm25 fsaverage Tue Jul 18 11:08:38 EDT 2017
+recon-all -s sub-07 finished without error at Tue Jul 18 11:08:45 EDT 2017
