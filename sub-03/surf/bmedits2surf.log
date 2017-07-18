@@ -1,0 +1,130 @@
+Log file for bmedits2surf
+Tue Jul 18 15:04:20 EDT 2017
+
+setenv SUBJECTS_DIR /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data
+cd /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data
+/Applications/freesurfer/bin/bmedits2surf --s sub-03
+
+freesurfer-Darwin-OSX-stable-pub-v6.0.0-2beb96c
+$Id: FreeSurferEnv.csh,v 1.89 2016/06/09 14:54:31 zkaufman Exp $
+Darwin CFMI-iMac-10.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+mri_concat /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/mri/brainmask.auto.mgz /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/mri/brainmask.mgz --paired-diff --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh
+ninputs = 2
+Checking inputs
+nframestot = 2
+Allocing output
+Done allocing
+Combining pairs
+nframes = 1
+Writing to /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh
+mri_binarize --abs --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh --min .5 --abs --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh
+
+$Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
+cwd /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data
+cmdline mri_binarize.bin --abs --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh --min .5 --abs --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh 
+sysname  Darwin
+hostname CFMI-iMac-10.local
+machine  x86_64
+user     freesurfer_user
+
+input      /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh
+frame      0
+nErode3d   0
+nErode2d   0
+output     /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh
+Binarizing based on threshold
+min        0.5
+max        +infinity
+binval        1
+binvalnot     0
+Removing sign from input
+fstart = 0, fend = 0, nframes = 1
+Found 21903 values in range
+Counting number of voxels in first frame
+Found 21903 voxels in final mask
+Count: 21903 21903.000000 16777216 0.130552
+mri_binarize done
+mri_binarize --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/mri/brainmask.mgz --match 1 --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/bm.erase.mgh --mask /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/stats/bm.erase.dat
+
+$Id: mri_binarize.c,v 1.43 2016/06/09 20:46:21 greve Exp $
+cwd /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data
+cmdline mri_binarize.bin --i /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/mri/brainmask.mgz --match 1 --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/bm.erase.mgh --mask /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh --count /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/stats/bm.erase.dat 
+sysname  Darwin
+hostname CFMI-iMac-10.local
+machine  x86_64
+user     freesurfer_user
+
+input      /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/mri/brainmask.mgz
+frame      0
+nErode3d   0
+nErode2d   0
+output     /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/bm.erase.mgh
+Binarizing based on matching values
+nMatch 1
+ 0     1
+binval        1
+binvalnot     0
+mask       /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh
+maskthresh 0.500000
+Loading mask /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/diff.mgh
+fstart = 0, fend = 0, nframes = 1
+Found 21903 values in range
+Counting number of voxels in first frame
+Found 21903 voxels in final mask
+Count: 21903 21903.000000 16777216 0.130552
+mri_binarize done
+mri_vol2surf --regheader sub-03 --hemi lh --mov /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/bm.erase.mgh --o /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/lh.bmerase.fsa.mgh --interp nearest --projfrac-max 0 2 .3 --trgsubject fsaverage
+srcvol = /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/tmpdir.bmedits2surf.91113/bm.erase.mgh
+srcreg unspecified
+srcregold = 0
+srcwarp unspecified
+surf = white
+hemi = lh
+trgsubject = fsaverage
+surfreg = sphere.reg
+ProjFrac = 0.5
+thickness = thickness
+reshape = 0
+interp = nearest
+float2int = round
+GetProjMax = 1
+INFO: float2int code = 0
+INFO: changing type to float
+Done loading volume
+Computing registration from header.
+  Using /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/mri/orig.mgz as target reference.
+-------- original matrix -----------
+ 1.00000   0.00000   0.00000   0.00000;
+ 0.00000   1.00000   0.00000   0.00000;
+ 0.00000   0.00000   1.00000   0.00000;
+ 0.00000   0.00000   0.00000   1.00000;
+-------- original matrix -----------
+Reading surface /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/lh.white
+Done reading source surface
+Reading thickness /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/lh.thickness
+Done
+Mapping Source Volume onto Source Subject Surface
+ 1 0 0 2
+using old
+ 2 0.3 0 2
+using old
+ 3 0.6 0 2
+using old
+ 4 0.9 0 2
+using old
+ 5 1.2 0 2
+using old
+ 6 1.5 0 2
+using old
+ 7 1.8 0 2
+using old
+Done mapping volume to surface
+Number of source voxels hit = 85633
+Reading source surface registration 
+  /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/sub-03/surf/lh.sphere.reg
+Done loading source registration surface
+Reading target registration 
+   /Users/freesurfer_user/Documents/Github/Edits-FreeSurfer-Training-Data/fsaverage/surf/lh.sphere.reg
+Done loading target registration surface
+Mapping Surfaces (sub-03 -> fsaverage)
+ERROR: mapping surfaces
