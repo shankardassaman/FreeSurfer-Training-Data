@@ -394,3 +394,13 @@ status file for recon-all
 Fri Jul  7 15:54:32 EDT 2017
 #@# BA_exvivo Labels rh Fri Jul  7 15:54:32 EDT 2017
 recon-all -s sub-01 finished without error at Fri Jul  7 15:59:33 EDT 2017
+\n\n
+New invocation of recon-all 
+\n\n
+status file for recon-all
+Tue Jul 18 15:22:25 EDT 2017
+#@# MotionCor Tue Jul 18 15:22:26 EDT 2017
+Darwin CFMI-iMac-10.local 16.6.0 Darwin Kernel Version 16.6.0: Fri Apr 14 16:21:16 PDT 2017; root:xnu-3789.60.24~6/RELEASE_X86_64 x86_64
+
+recon-all -s sub-01 exited with ERRORS at Tue Jul 18 15:22:26 EDT 2017
+
