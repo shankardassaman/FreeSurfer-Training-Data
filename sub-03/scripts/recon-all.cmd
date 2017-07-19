@@ -1693,3 +1693,171 @@ Add the -clean-bm flag to recon-all to overwrite brainmask.mgz.\n
 # New invocation of recon-all Tue Jul 18 15:28:58 EDT 2017 
 \n\n#---------------------------------
 # New invocation of recon-all Tue Jul 18 15:33:51 EDT 2017 
+#--------------------------------------------
+#@# Sphere rh Tue Jul 18 15:44:05 EDT 2017
+\n mris_sphere -rusage /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/sub-03/touch/rusage.mris_sphere.rh.dat -seed 1234 ../surf/rh.inflated ../surf/rh.sphere \n
+#--------------------------------------------
+#@# Surf Reg lh Tue Jul 18 16:18:29 EDT 2017
+\n mris_register -curv -rusage /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/sub-03/touch/rusage.mris_register.lh.dat ../surf/lh.sphere /Applications/freesurfer/average/lh.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif ../surf/lh.sphere.reg \n
+#--------------------------------------------
+#@# Surf Reg rh Tue Jul 18 17:12:27 EDT 2017
+\n mris_register -curv -rusage /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/sub-03/touch/rusage.mris_register.rh.dat ../surf/rh.sphere /Applications/freesurfer/average/rh.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif ../surf/rh.sphere.reg \n
+#--------------------------------------------
+#@# Jacobian white lh Tue Jul 18 17:56:06 EDT 2017
+\n mris_jacobian ../surf/lh.white.preaparc ../surf/lh.sphere.reg ../surf/lh.jacobian_white \n
+#--------------------------------------------
+#@# Jacobian white rh Tue Jul 18 17:56:08 EDT 2017
+\n mris_jacobian ../surf/rh.white.preaparc ../surf/rh.sphere.reg ../surf/rh.jacobian_white \n
+#--------------------------------------------
+#@# AvgCurv lh Tue Jul 18 17:56:10 EDT 2017
+\n mrisp_paint -a 5 /Applications/freesurfer/average/lh.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif#6 ../surf/lh.sphere.reg ../surf/lh.avg_curv \n
+#--------------------------------------------
+#@# AvgCurv rh Tue Jul 18 17:56:12 EDT 2017
+\n mrisp_paint -a 5 /Applications/freesurfer/average/rh.folding.atlas.acfb40.noaparc.i12.2016-08-02.tif#6 ../surf/rh.sphere.reg ../surf/rh.avg_curv \n
+#-----------------------------------------
+#@# Cortical Parc lh Tue Jul 18 17:56:13 EDT 2017
+\n mris_ca_label -l ../label/lh.cortex.label -aseg ../mri/aseg.presurf.mgz -seed 1234 sub-03 lh ../surf/lh.sphere.reg /Applications/freesurfer/average/lh.DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs ../label/lh.aparc.annot \n
+#-----------------------------------------
+#@# Cortical Parc rh Tue Jul 18 17:56:29 EDT 2017
+\n mris_ca_label -l ../label/rh.cortex.label -aseg ../mri/aseg.presurf.mgz -seed 1234 sub-03 rh ../surf/rh.sphere.reg /Applications/freesurfer/average/rh.DKaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs ../label/rh.aparc.annot \n
+#--------------------------------------------
+#@# Make Pial Surf lh Tue Jul 18 17:56:44 EDT 2017
+\n mris_make_surfaces -orig_white white.preaparc -orig_pial white.preaparc -aseg ../mri/aseg.presurf -mgz -T1 brain.finalsurfs sub-03 lh \n
+#--------------------------------------------
+#@# Make Pial Surf rh Tue Jul 18 18:10:34 EDT 2017
+\n mris_make_surfaces -orig_white white.preaparc -orig_pial white.preaparc -aseg ../mri/aseg.presurf -mgz -T1 brain.finalsurfs sub-03 rh \n
+#--------------------------------------------
+#@# Surf Volume lh Tue Jul 18 18:23:31 EDT 2017
+#--------------------------------------------
+#@# Surf Volume rh Tue Jul 18 18:23:35 EDT 2017
+#--------------------------------------------
+#@# Cortical ribbon mask Tue Jul 18 18:23:38 EDT 2017
+\n mris_volmask --aseg_name aseg.presurf --label_left_white 2 --label_left_ribbon 3 --label_right_white 41 --label_right_ribbon 42 --save_ribbon sub-03 \n
+#-----------------------------------------
+#@# Parcellation Stats lh Tue Jul 18 18:36:57 EDT 2017
+\n mris_anatomical_stats -th3 -mgz -cortex ../label/lh.cortex.label -f ../stats/lh.aparc.stats -b -a ../label/lh.aparc.annot -c ../label/aparc.annot.ctab sub-03 lh white \n
+\n mris_anatomical_stats -th3 -mgz -cortex ../label/lh.cortex.label -f ../stats/lh.aparc.pial.stats -b -a ../label/lh.aparc.annot -c ../label/aparc.annot.ctab sub-03 lh pial \n
+#-----------------------------------------
+#@# Parcellation Stats rh Tue Jul 18 18:38:03 EDT 2017
+\n mris_anatomical_stats -th3 -mgz -cortex ../label/rh.cortex.label -f ../stats/rh.aparc.stats -b -a ../label/rh.aparc.annot -c ../label/aparc.annot.ctab sub-03 rh white \n
+\n mris_anatomical_stats -th3 -mgz -cortex ../label/rh.cortex.label -f ../stats/rh.aparc.pial.stats -b -a ../label/rh.aparc.annot -c ../label/aparc.annot.ctab sub-03 rh pial \n
+#-----------------------------------------
+#@# Cortical Parc 2 lh Tue Jul 18 18:39:07 EDT 2017
+\n mris_ca_label -l ../label/lh.cortex.label -aseg ../mri/aseg.presurf.mgz -seed 1234 sub-03 lh ../surf/lh.sphere.reg /Applications/freesurfer/average/lh.CDaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs ../label/lh.aparc.a2009s.annot \n
+#-----------------------------------------
+#@# Cortical Parc 2 rh Tue Jul 18 18:39:26 EDT 2017
+\n mris_ca_label -l ../label/rh.cortex.label -aseg ../mri/aseg.presurf.mgz -seed 1234 sub-03 rh ../surf/rh.sphere.reg /Applications/freesurfer/average/rh.CDaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs ../label/rh.aparc.a2009s.annot \n
+#-----------------------------------------
+#@# Parcellation Stats 2 lh Tue Jul 18 18:39:44 EDT 2017
+\n mris_anatomical_stats -th3 -mgz -cortex ../label/lh.cortex.label -f ../stats/lh.aparc.a2009s.stats -b -a ../label/lh.aparc.a2009s.annot -c ../label/aparc.annot.a2009s.ctab sub-03 lh white \n
+#-----------------------------------------
+#@# Parcellation Stats 2 rh Tue Jul 18 18:40:18 EDT 2017
+\n mris_anatomical_stats -th3 -mgz -cortex ../label/rh.cortex.label -f ../stats/rh.aparc.a2009s.stats -b -a ../label/rh.aparc.a2009s.annot -c ../label/aparc.annot.a2009s.ctab sub-03 rh white \n
+#-----------------------------------------
+#@# Cortical Parc 3 lh Tue Jul 18 18:40:52 EDT 2017
+\n mris_ca_label -l ../label/lh.cortex.label -aseg ../mri/aseg.presurf.mgz -seed 1234 sub-03 lh ../surf/lh.sphere.reg /Applications/freesurfer/average/lh.DKTaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs ../label/lh.aparc.DKTatlas.annot \n
+#-----------------------------------------
+#@# Cortical Parc 3 rh Tue Jul 18 18:41:06 EDT 2017
+\n mris_ca_label -l ../label/rh.cortex.label -aseg ../mri/aseg.presurf.mgz -seed 1234 sub-03 rh ../surf/rh.sphere.reg /Applications/freesurfer/average/rh.DKTaparc.atlas.acfb40.noaparc.i12.2016-08-02.gcs ../label/rh.aparc.DKTatlas.annot \n
+#-----------------------------------------
+#@# Parcellation Stats 3 lh Tue Jul 18 18:41:21 EDT 2017
+\n mris_anatomical_stats -th3 -mgz -cortex ../label/lh.cortex.label -f ../stats/lh.aparc.DKTatlas.stats -b -a ../label/lh.aparc.DKTatlas.annot -c ../label/aparc.annot.DKTatlas.ctab sub-03 lh white \n
+#-----------------------------------------
+#@# Parcellation Stats 3 rh Tue Jul 18 18:41:53 EDT 2017
+\n mris_anatomical_stats -th3 -mgz -cortex ../label/rh.cortex.label -f ../stats/rh.aparc.DKTatlas.stats -b -a ../label/rh.aparc.DKTatlas.annot -c ../label/aparc.annot.DKTatlas.ctab sub-03 rh white \n
+#-----------------------------------------
+#@# WM/GM Contrast lh Tue Jul 18 18:42:26 EDT 2017
+\n pctsurfcon --s sub-03 --lh-only \n
+#-----------------------------------------
+#@# WM/GM Contrast rh Tue Jul 18 18:42:32 EDT 2017
+\n pctsurfcon --s sub-03 --rh-only \n
+#-----------------------------------------
+#@# Relabel Hypointensities Tue Jul 18 18:42:38 EDT 2017
+\n mri_relabel_hypointensities aseg.presurf.mgz ../surf aseg.presurf.hypos.mgz \n
+#-----------------------------------------
+#@# AParc-to-ASeg aparc Tue Jul 18 18:42:59 EDT 2017
+\n mri_aparc2aseg --s sub-03 --volmask --aseg aseg.presurf.hypos --relabel mri/norm.mgz mri/transforms/talairach.m3z /Applications/freesurfer/average/RB_all_2016-05-10.vc700.gca mri/aseg.auto_noCCseg.label_intensities.txt \n
+#-----------------------------------------
+#@# AParc-to-ASeg a2009s Tue Jul 18 18:47:26 EDT 2017
+\n mri_aparc2aseg --s sub-03 --volmask --aseg aseg.presurf.hypos --relabel mri/norm.mgz mri/transforms/talairach.m3z /Applications/freesurfer/average/RB_all_2016-05-10.vc700.gca mri/aseg.auto_noCCseg.label_intensities.txt --a2009s \n
+#-----------------------------------------
+#@# AParc-to-ASeg DKTatlas Tue Jul 18 18:51:50 EDT 2017
+\n mri_aparc2aseg --s sub-03 --volmask --aseg aseg.presurf.hypos --relabel mri/norm.mgz mri/transforms/talairach.m3z /Applications/freesurfer/average/RB_all_2016-05-10.vc700.gca mri/aseg.auto_noCCseg.label_intensities.txt --annot aparc.DKTatlas --o mri/aparc.DKTatlas+aseg.mgz \n
+#-----------------------------------------
+#@# APas-to-ASeg Tue Jul 18 18:56:15 EDT 2017
+\n apas2aseg --i aparc+aseg.mgz --o aseg.mgz \n
+#--------------------------------------------
+#@# ASeg Stats Tue Jul 18 18:56:21 EDT 2017
+\n mri_segstats --seg mri/aseg.mgz --sum stats/aseg.stats --pv mri/norm.mgz --empty --brainmask mri/brainmask.mgz --brain-vol-from-seg --excludeid 0 --excl-ctxgmwm --supratent --subcortgray --in mri/norm.mgz --in-intensity-name norm --in-intensity-units MR --etiv --surf-wm-vol --surf-ctx-vol --totalgray --euler --ctab /Applications/freesurfer/ASegStatsLUT.txt --subject sub-03 \n
+#-----------------------------------------
+#@# WMParc Tue Jul 18 18:59:17 EDT 2017
+\n mri_aparc2aseg --s sub-03 --labelwm --hypo-as-wm --rip-unknown --volmask --o mri/wmparc.mgz --ctxseg aparc+aseg.mgz \n
+\n mri_segstats --seg mri/wmparc.mgz --sum stats/wmparc.stats --pv mri/norm.mgz --excludeid 0 --brainmask mri/brainmask.mgz --in mri/norm.mgz --in-intensity-name norm --in-intensity-units MR --subject sub-03 --surf-wm-vol --ctab /Applications/freesurfer/WMParcStatsLUT.txt --etiv \n
+#--------------------------------------------
+#@# BA_exvivo Labels lh Tue Jul 18 19:07:11 EDT 2017
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA1_exvivo.label --trgsubject sub-03 --trglabel ./lh.BA1_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA2_exvivo.label --trgsubject sub-03 --trglabel ./lh.BA2_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA3a_exvivo.label --trgsubject sub-03 --trglabel ./lh.BA3a_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA3b_exvivo.label --trgsubject sub-03 --trglabel ./lh.BA3b_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA4a_exvivo.label --trgsubject sub-03 --trglabel ./lh.BA4a_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA4p_exvivo.label --trgsubject sub-03 --trglabel ./lh.BA4p_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA6_exvivo.label --trgsubject sub-03 --trglabel ./lh.BA6_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA44_exvivo.label --trgsubject sub-03 --trglabel ./lh.BA44_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA45_exvivo.label --trgsubject sub-03 --trglabel ./lh.BA45_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.V1_exvivo.label --trgsubject sub-03 --trglabel ./lh.V1_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.V2_exvivo.label --trgsubject sub-03 --trglabel ./lh.V2_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.MT_exvivo.label --trgsubject sub-03 --trglabel ./lh.MT_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.entorhinal_exvivo.label --trgsubject sub-03 --trglabel ./lh.entorhinal_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.perirhinal_exvivo.label --trgsubject sub-03 --trglabel ./lh.perirhinal_exvivo.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA1_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.BA1_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA2_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.BA2_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA3a_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.BA3a_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA3b_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.BA3b_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA4a_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.BA4a_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA4p_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.BA4p_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA6_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.BA6_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA44_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.BA44_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.BA45_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.BA45_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.V1_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.V1_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.V2_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.V2_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.MT_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.MT_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.entorhinal_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.entorhinal_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/lh.perirhinal_exvivo.thresh.label --trgsubject sub-03 --trglabel ./lh.perirhinal_exvivo.thresh.label --hemi lh --regmethod surface \n
+\n mris_label2annot --s sub-03 --hemi lh --ctab /Applications/freesurfer/average/colortable_BA.txt --l lh.BA1_exvivo.label --l lh.BA2_exvivo.label --l lh.BA3a_exvivo.label --l lh.BA3b_exvivo.label --l lh.BA4a_exvivo.label --l lh.BA4p_exvivo.label --l lh.BA6_exvivo.label --l lh.BA44_exvivo.label --l lh.BA45_exvivo.label --l lh.V1_exvivo.label --l lh.V2_exvivo.label --l lh.MT_exvivo.label --l lh.entorhinal_exvivo.label --l lh.perirhinal_exvivo.label --a BA_exvivo --maxstatwinner --noverbose \n
+\n mris_label2annot --s sub-03 --hemi lh --ctab /Applications/freesurfer/average/colortable_BA.txt --l lh.BA1_exvivo.thresh.label --l lh.BA2_exvivo.thresh.label --l lh.BA3a_exvivo.thresh.label --l lh.BA3b_exvivo.thresh.label --l lh.BA4a_exvivo.thresh.label --l lh.BA4p_exvivo.thresh.label --l lh.BA6_exvivo.thresh.label --l lh.BA44_exvivo.thresh.label --l lh.BA45_exvivo.thresh.label --l lh.V1_exvivo.thresh.label --l lh.V2_exvivo.thresh.label --l lh.MT_exvivo.thresh.label --l lh.entorhinal_exvivo.thresh.label --l lh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose \n
+\n mris_anatomical_stats -th3 -mgz -f ../stats/lh.BA_exvivo.stats -b -a ./lh.BA_exvivo.annot -c ./BA_exvivo.ctab sub-03 lh white \n
+\n mris_anatomical_stats -th3 -mgz -f ../stats/lh.BA_exvivo.thresh.stats -b -a ./lh.BA_exvivo.thresh.annot -c ./BA_exvivo.thresh.ctab sub-03 lh white \n
+#--------------------------------------------
+#@# BA_exvivo Labels rh Tue Jul 18 19:11:29 EDT 2017
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA1_exvivo.label --trgsubject sub-03 --trglabel ./rh.BA1_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA2_exvivo.label --trgsubject sub-03 --trglabel ./rh.BA2_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA3a_exvivo.label --trgsubject sub-03 --trglabel ./rh.BA3a_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA3b_exvivo.label --trgsubject sub-03 --trglabel ./rh.BA3b_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA4a_exvivo.label --trgsubject sub-03 --trglabel ./rh.BA4a_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA4p_exvivo.label --trgsubject sub-03 --trglabel ./rh.BA4p_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA6_exvivo.label --trgsubject sub-03 --trglabel ./rh.BA6_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA44_exvivo.label --trgsubject sub-03 --trglabel ./rh.BA44_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA45_exvivo.label --trgsubject sub-03 --trglabel ./rh.BA45_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.V1_exvivo.label --trgsubject sub-03 --trglabel ./rh.V1_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.V2_exvivo.label --trgsubject sub-03 --trglabel ./rh.V2_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.MT_exvivo.label --trgsubject sub-03 --trglabel ./rh.MT_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.entorhinal_exvivo.label --trgsubject sub-03 --trglabel ./rh.entorhinal_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.perirhinal_exvivo.label --trgsubject sub-03 --trglabel ./rh.perirhinal_exvivo.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA1_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.BA1_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA2_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.BA2_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA3a_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.BA3a_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA3b_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.BA3b_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA4a_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.BA4a_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA4p_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.BA4p_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA6_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.BA6_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA44_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.BA44_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.BA45_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.BA45_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.V1_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.V1_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.V2_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.V2_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.MT_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.MT_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.entorhinal_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.entorhinal_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mri_label2label --srcsubject fsaverage --srclabel /Users/freesurfer_user/Documents/GitHub/Edits-FreeSurfer-Training-Data/fsaverage/label/rh.perirhinal_exvivo.thresh.label --trgsubject sub-03 --trglabel ./rh.perirhinal_exvivo.thresh.label --hemi rh --regmethod surface \n
+\n mris_label2annot --s sub-03 --hemi rh --ctab /Applications/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.label --l rh.BA2_exvivo.label --l rh.BA3a_exvivo.label --l rh.BA3b_exvivo.label --l rh.BA4a_exvivo.label --l rh.BA4p_exvivo.label --l rh.BA6_exvivo.label --l rh.BA44_exvivo.label --l rh.BA45_exvivo.label --l rh.V1_exvivo.label --l rh.V2_exvivo.label --l rh.MT_exvivo.label --l rh.entorhinal_exvivo.label --l rh.perirhinal_exvivo.label --a BA_exvivo --maxstatwinner --noverbose \n
+\n mris_label2annot --s sub-03 --hemi rh --ctab /Applications/freesurfer/average/colortable_BA.txt --l rh.BA1_exvivo.thresh.label --l rh.BA2_exvivo.thresh.label --l rh.BA3a_exvivo.thresh.label --l rh.BA3b_exvivo.thresh.label --l rh.BA4a_exvivo.thresh.label --l rh.BA4p_exvivo.thresh.label --l rh.BA6_exvivo.thresh.label --l rh.BA44_exvivo.thresh.label --l rh.BA45_exvivo.thresh.label --l rh.V1_exvivo.thresh.label --l rh.V2_exvivo.thresh.label --l rh.MT_exvivo.thresh.label --l rh.entorhinal_exvivo.thresh.label --l rh.perirhinal_exvivo.thresh.label --a BA_exvivo.thresh --maxstatwinner --noverbose \n
+\n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.stats -b -a ./rh.BA_exvivo.annot -c ./BA_exvivo.ctab sub-03 rh white \n
+\n mris_anatomical_stats -th3 -mgz -f ../stats/rh.BA_exvivo.thresh.stats -b -a ./rh.BA_exvivo.thresh.annot -c ./BA_exvivo.thresh.ctab sub-03 rh white \n
